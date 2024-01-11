@@ -1,0 +1,10 @@
+.title{
+    color: rgb(48, 0, 8);
+    text-decoration: underline;
+    text-shadow: 1px 1px white;
+}
+
+.fix{
+    display: flex;
+    justify-content: center;
+}
