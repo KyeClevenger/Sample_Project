@@ -1,9 +1,6 @@
 .title {
-    color: rgb(48, 0, 8);
-    text-decoration: underline;
-    text-shadow: 1px 1px white;
+    text-shadow: 1px 1px rgb(53, 13, 13);
 }
-
 .fix {
     height: 100vh;
     width: 100vw;
@@ -44,6 +41,46 @@ h1 {
 }
 
 .card {
-    margin: 0 auto; 
-    float: none; 
+    margin: 0 auto;
+    float: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --background-color: black;
+    --text-color: hsl(0, 0%, 100%);
+}
+
+body {
+    margin: 0;
+}
+
+.wrapper {
+    display: grid;
+    place-content: center;
+    font-family: "Oswald", sans-serif;
+    font-size: clamp(1.5rem, 1rem + 2vw, 3rem);
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgb(144, 32, 51);
+}
+
+.wrapper>div {
+    grid-area: 1/1/-1/-1;
+}
+
+.top {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 48%, 0% 58%);
+}
+
+.bottom {
+    clip-path: polygon(0% 60%, 100% 50%, 100% 100%, 0% 100%);
+    color: transparent;
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    transform: translateX(-0.02em);
 }
