@@ -12,17 +12,27 @@
 
 <body class=" fix bg-danger bg-gradient">
     <div>
-    <h1 class="title m-3">Kye's Sample Project</h1>
-    <div class=" card border border-5" style="width: 18rem;">
-        <img src="/images/mtech.png" class="card-img-top" alt="MountainLand Technical College Logo">
-        <div class="card-body">
-            <p class="card-text">Kye Clevenger Web Dev Student</p>
+        <h1 class=" d-flex fadeInRight-animation title m-3">
+            <section class=" m-2 wrapper">
+                <div class="top">Source</div>
+                <div class="bottom" >Source</div>
+            </section>
+            <section class="m-2 wrapper">
+                <div class="top">Control</div>
+                <div class="bottom" aria-hidden="true">Control</div>
+            </section>
+        </h1>
+        <div class="fadeInRight-animation card border border-5 shadow-lg p-3 mb-5 rounded" style="width: 18rem;">
+            <img src="https://mtec.edu/wp-content/uploads/2023/01/vertical-maroon-on-white-full-name-1024x1024.png" onmouseover="this.style.cursor='pointer'" onclick="window.location.href='https://mtec.edu/';" class="card-img-top" alt="MountainLand Technical College Logo">
+            <div class="card-body">
+                <h5 class="card-title d-flex justify-content-center">Kye Clevenger</h5>
+                <p class="card-text d-flex justify-content-center">Web Development Student</p>
+            </div>
         </div>
     </div>
-</div>
+    <script src="js/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
 </body>
-
 </html>
