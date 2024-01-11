@@ -24,20 +24,20 @@ h1 {
     text-align: center;
 }
 
-@keyframes fadeInUp {
+@keyframes fadeInRight {
     0% {
-        transform: translateY(100%);
+        transform: translatex(-25%);
         opacity: 0;
     }
 
     100% {
-        transform: translateY(0%);
+        transform: translateX(0%);
         opacity: 1;
     }
 }
 
-.fadeInUp-animation {
-    animation: 1.5s fadeInUp;
+.fadeInRight-animation {
+    animation: 1.5s fadeInRight;
 }
 
 .card {
@@ -66,6 +66,7 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     color: rgb(144, 32, 51);
+
 }
 
 .wrapper>div {
