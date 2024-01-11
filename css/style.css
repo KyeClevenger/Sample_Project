@@ -1,10 +1,75 @@
-.title{
-    color: rgb(48, 0, 8);
-    text-decoration: underline;
-    text-shadow: 1px 1px white;
+.title {
+    text-shadow: 1px 1px rgb(53, 13, 13);
 }
-
-.fix{
+.fix {
+    height: 100vh;
+    width: 100vw;
     display: flex;
     justify-content: center;
+}
+
+HTML CSSResult Skip Results Iframe EDIT ON * {
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 50px 0;
+    text-align: center;
+}
+
+@keyframes fadeInRight {
+    0% {
+        transform: translatex(-25%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+.fadeInRight-animation {
+    animation: 1.5s fadeInRight;
+}
+
+.card {
+    margin: 0 auto;
+    float: none;
+    margin-top: 50px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.wrapper {
+    display: grid;
+    place-content: center;
+    font-family: "Oswald", sans-serif;
+    font-size: clamp(1.5rem, 1rem + 2vw, 3rem);
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgb(144, 32, 51);
+
+}
+
+.wrapper>div {
+    grid-area: 1/1/-1/-1;
+}
+
+.top {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 48%, 0% 58%);
+}
+
+.bottom {
+    clip-path: polygon(0% 60%, 100% 50%, 100% 100%, 0% 100%);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    transform: translateX(-0.02em);
 }
