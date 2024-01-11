@@ -1,10 +1,44 @@
-.title{
+.title {
     color: rgb(48, 0, 8);
     text-decoration: underline;
     text-shadow: 1px 1px white;
 }
 
-.fix{
+.fix {
+    height: 100vh;
+    width: 100vw;
     display: flex;
     justify-content: center;
+}
+
+HTML CSSResult Skip Results Iframe EDIT ON * {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    font-family: "Roboto", sans-serif;
+    background-color: black;
+    color: white;
+}
+
+h1 {
+    margin: 50px 0;
+    text-align: center;
+}
+
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+.fadeInUp-animation {
+    animation: 1.5s fadeInUp;
 }
